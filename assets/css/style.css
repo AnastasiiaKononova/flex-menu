@@ -1,0 +1,68 @@
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-size: 16px;
+  --text-color: #fff;
+  --bg-color-nav: #333;
+  --link-color-hover: bisque;
+  --header-bg-image: url(https://images.pexels.com/photos/914390/pexels-photo-914390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  --header-width: 100vw;
+  --header-height: 100vh;
+  --logo-font-size: 1.5em;
+  --logo-font-weight: 600;
+  --link-font-size: 0.9em;
+  --border-radius: 3px;
+  --border-color: #fff;
+  --transition-time: 0.5s;
+  --nav-gap: 20px 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  text-align: center;
+}
+
+header {
+  width: var(--header-width);
+  height: var(--header-height);
+  line-height: 1.5;
+  color: var(--text-color);
+  background-image: var(--header-bg-image);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  background-color: var(--bg-color-nav);
+  gap: var(--nav-gap);
+}
+
+.logo {
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--logo-font-weight);
+  transition: color var(--transition-time);
+}
+
+.nav a:hover {
+  color: var(--link-color-hover);
+}
+
+.contact-link {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--link-font-size);
+}
